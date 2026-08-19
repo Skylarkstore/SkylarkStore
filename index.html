@@ -1,0 +1,1056 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Skylark Store</title>
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+    >
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+</head>
+
+
+<body>
+
+
+    <!-- =====================================================
+         BACKGROUND EFFECTS
+    ====================================================== -->
+
+    <div class="ocean-glow glow-1"></div>
+
+    <div class="ocean-glow glow-2"></div>
+
+
+
+    <!-- =====================================================
+         NAVBAR
+    ====================================================== -->
+
+    <header class="navbar">
+
+        <div class="nav-container">
+
+
+            <div class="logo">
+
+                <div class="logo-icon">
+                    SLK
+                </div>
+
+                <span>
+                    SKYLARK
+                </span>
+
+            </div>
+
+
+
+            <nav>
+
+                <a href="#home">
+                    Home
+                </a>
+
+                <a href="#ranks">
+                    Ranks
+                </a>
+
+                <a href="#keys">
+                    Key Crates
+                </a>
+
+                <a href="#about">
+                    About
+                </a>
+
+            </nav>
+
+
+
+            <button
+                class="discord-btn"
+                onclick="openDiscord()"
+            >
+                Discord
+            </button>
+
+
+        </div>
+
+    </header>
+
+
+
+    <!-- =====================================================
+         HERO
+    ====================================================== -->
+
+    <section
+        class="hero"
+        id="home"
+    >
+
+        <div class="hero-content">
+
+
+            <div class="status">
+
+                <span class="status-dot"></span>
+
+                SERVER ONLINE
+
+            </div>
+
+
+
+            <h1>
+
+                Welcome to<br>
+
+                <span>
+                    Skylark Store
+                </span>
+
+            </h1>
+
+
+
+            <p>
+
+                Upgrade your Minecraft experience with exclusive
+                ranks, perks, keys and rewards.
+
+            </p>
+
+
+
+            <div class="hero-buttons">
+
+
+                <button
+                    class="primary-btn"
+                    onclick="scrollToRanks()"
+                >
+
+                    Browse Store
+
+                </button>
+
+
+
+                <button
+                    class="secondary-btn"
+                    onclick="copyIP()"
+                >
+
+                    Copy Server IP
+
+                </button>
+
+
+            </div>
+
+
+
+            <div class="server-ip">
+
+                <span>
+                    SKYLARKSMP.SREIN.XYZ
+                </span>
+
+                <span class="players">
+                    ● 30 Players Online
+                </span>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         RANKS
+    ====================================================== -->
+
+    <section
+        class="store-section"
+        id="ranks"
+    >
+
+
+        <div class="section-title">
+
+
+            <span class="small-title">
+                SKYLARK STORE
+            </span>
+
+
+
+            <h2>
+
+                Choose Your
+
+                <span>
+                    Rank
+                </span>
+
+            </h2>
+
+
+
+            <p>
+                Support the server and unlock exclusive perks.
+            </p>
+
+
+        </div>
+
+
+
+        <div class="rank-container">
+
+
+            <!-- =================================================
+                 SKYLARK+
+            ================================================== -->
+
+            <div class="rank-card skylark">
+
+
+                <div class="rank-icon">
+                    ✦
+                </div>
+
+
+
+                <div class="rank-name">
+                    SKYLARK+
+                </div>
+
+
+
+                <div class="rank-description">
+
+                    The ultimate rank for Skylark players.
+
+                </div>
+
+
+
+                <div class="price">
+
+                    <span>
+                        ₱
+                    </span>
+
+                    199.99
+
+                </div>
+
+
+
+                <div class="perks">
+
+                    <div>
+                        ✓ Exclusive Skylark+ prefix
+                    </div>
+
+                    <div>
+                        ✓ Special chat color
+                    </div>
+
+                    <div>
+                        ✓ Extra server perks
+                    </div>
+
+                    <div>
+                        ✓ Priority server access
+                    </div>
+
+                    <div>
+                        ✓ Exclusive cosmetics
+                    </div>
+
+                </div>
+
+
+
+                <button
+                    class="buy-btn"
+                    onclick="buyProduct('Skylark+', '199.99')"
+                >
+
+                    Purchase
+
+                </button>
+
+
+            </div>
+
+
+
+            <!-- =================================================
+                 VIP+
+            ================================================== -->
+
+            <div class="rank-card vip">
+
+
+                <div class="rank-icon">
+                    ★
+                </div>
+
+
+
+                <div class="rank-name">
+                    VIP+
+                </div>
+
+
+
+                <div class="rank-description">
+
+                    A powerful upgrade for dedicated players.
+
+                </div>
+
+
+
+                <div class="price">
+
+                    <span>
+                        ₱
+                    </span>
+
+                    99.99
+
+                </div>
+
+
+
+                <div class="perks">
+
+                    <div>
+                        ✓ VIP+ prefix
+                    </div>
+
+                    <div>
+                        ✓ Custom chat color
+                    </div>
+
+                    <div>
+                        ✓ VIP cosmetics
+                    </div>
+
+                    <div>
+                        ✓ Extra commands
+                    </div>
+
+                    <div>
+                        ✓ Priority support
+                    </div>
+
+                </div>
+
+
+
+                <button
+                    class="buy-btn"
+                    onclick="buyProduct('VIP+', '99.99')"
+                >
+
+                    Purchase
+
+                </button>
+
+
+            </div>
+
+
+
+            <!-- =================================================
+                 VIP ORANGE
+            ================================================== -->
+
+            <div class="rank-card orange-vip">
+
+
+                <div class="rank-icon">
+                    ★
+                </div>
+
+
+
+                <div class="rank-name">
+                    VIP
+                </div>
+
+
+
+                <div class="rank-description">
+
+                    A premium rank for dedicated Skylark players.
+
+                </div>
+
+
+
+                <div class="price">
+
+                    <span>
+                        ₱
+                    </span>
+
+                    59.99
+
+                </div>
+
+
+
+                <div class="perks">
+
+                    <div>
+                        ✓ VIP prefix
+                    </div>
+
+                    <div>
+                        ✓ Orange chat color
+                    </div>
+
+                    <div>
+                        ✓ VIP cosmetics
+                    </div>
+
+                    <div>
+                        ✓ Extra commands
+                    </div>
+
+                    <div>
+                        ✓ Special effects
+                    </div>
+
+                </div>
+
+
+
+                <button
+                    class="buy-btn"
+                    onclick="buyProduct('VIP', '59.99')"
+                >
+
+                    Purchase
+
+                </button>
+
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         AMETHYST KEY CRATES
+    ====================================================== -->
+
+    <section
+        class="store-section key-section"
+        id="keys"
+    >
+
+
+        <div class="section-title">
+
+
+            <span class="small-title">
+                SKYLARK STORE
+            </span>
+
+
+
+            <h2>
+
+                Amethyst
+
+                <span>
+                    Key Crates
+                </span>
+
+            </h2>
+
+
+
+            <p>
+                Get Amethyst Crates for your Skylark experience.
+            </p>
+
+
+        </div>
+
+
+
+        <div class="rank-container">
+
+
+            <!-- =================================================
+                 AMETHYST CRATE - 2 DAYS
+            ================================================== -->
+
+            <div class="rank-card amethyst">
+
+
+                <div class="rank-icon">
+                    ◆
+                </div>
+
+
+
+                <div class="rank-name">
+                    AMETHYST CRATE
+                </div>
+
+
+
+                <div class="rank-description">
+
+                    Amethyst Crates Key.
+
+                </div>
+
+
+
+                <div class="price">
+
+                    <span>
+                        ₱
+                    </span>
+
+                    29.99
+
+                </div>
+
+
+
+                <div class="crate-duration">
+
+                    2 DAYS
+
+                </div>
+
+
+
+                <div class="perks">
+
+                    <div>
+                        ✓ Amethyst Crates Key
+                    </div>
+
+                    <div>
+                        ✓ 2 Day Access
+                    </div>
+
+                    <div>
+                        ✓ Premium crate rewards
+                    </div>
+
+                </div>
+
+
+
+                <button
+                    class="buy-btn"
+                    onclick="buyProduct('Amethyst Crate - 2 Days', '29.99')"
+                >
+
+                    Purchase
+
+                </button>
+
+
+            </div>
+
+
+
+            <!-- =================================================
+                 AMETHYST CRATE - 3 DAYS
+            ================================================== -->
+
+            <div class="rank-card amethyst">
+
+
+                <div class="rank-icon">
+                    ◆
+                </div>
+
+
+
+                <div class="rank-name">
+                    AMETHYST CRATE
+                </div>
+
+
+
+                <div class="rank-description">
+
+                    Amethyst Crates Key.
+
+                </div>
+
+
+
+                <div class="price">
+
+                    <span>
+                        ₱
+                    </span>
+
+                    39.99
+
+                </div>
+
+
+
+                <div class="crate-duration">
+
+                    3 DAYS
+
+                </div>
+
+
+
+                <div class="perks">
+
+                    <div>
+                        ✓ Amethyst Crates Key
+                    </div>
+
+                    <div>
+                        ✓ 3 Day Access
+                    </div>
+
+                    <div>
+                        ✓ Premium crate rewards
+                    </div>
+
+                </div>
+
+
+
+                <button
+                    class="buy-btn"
+                    onclick="buyProduct('Amethyst Crate - 3 Days', '39.99')"
+                >
+
+                    Purchase
+
+                </button>
+
+
+            </div>
+
+
+
+            <!-- =================================================
+                 AMETHYST CRATE - 5 DAYS
+            ================================================== -->
+
+            <div class="rank-card amethyst">
+
+
+                <div class="rank-icon">
+                    ◆
+                </div>
+
+
+
+                <div class="rank-name">
+                    AMETHYST CRATE
+                </div>
+
+
+
+                <div class="rank-description">
+
+                    Amethyst Crates Key.
+
+                </div>
+
+
+
+                <div class="price">
+
+                    <span>
+                        ₱
+                    </span>
+
+                    59.99
+
+                </div>
+
+
+
+                <div class="crate-duration">
+
+                    5 DAYS
+
+                </div>
+
+
+
+                <div class="perks">
+
+                    <div>
+                        ✓ Amethyst Crates Key
+                    </div>
+
+                    <div>
+                        ✓ 5 Day Access
+                    </div>
+
+                    <div>
+                        ✓ Premium crate rewards
+                    </div>
+
+                </div>
+
+
+
+                <button
+                    class="buy-btn"
+                    onclick="buyProduct('Amethyst Crate - 5 Days', '59.99')"
+                >
+
+                    Purchase
+
+                </button>
+
+
+            </div>
+
+
+
+            <!-- =================================================
+                 AMETHYST CRATE - 1 MONTH
+            ================================================== -->
+
+            <div class="rank-card amethyst">
+
+
+                <div class="rank-icon">
+                    ◆
+                </div>
+
+
+
+                <div class="rank-name">
+                    AMETHYST CRATE
+                </div>
+
+
+
+                <div class="rank-description">
+
+                    Amethyst Crates Key.
+
+                </div>
+
+
+
+                <div class="price">
+
+                    <span>
+                        ₱
+                    </span>
+
+                    99.99
+
+                </div>
+
+
+
+                <div class="crate-duration">
+
+                    1 MONTH
+
+                </div>
+
+
+
+                <div class="perks">
+
+                    <div>
+                        ✓ Amethyst Crates Key
+                    </div>
+
+                    <div>
+                        ✓ 1 Month Access
+                    </div>
+
+                    <div>
+                        ✓ Premium crate rewards
+                    </div>
+
+                </div>
+
+
+
+                <button
+                    class="buy-btn"
+                    onclick="buyProduct('Amethyst Crate - 1 Month', '99.99')"
+                >
+
+                    Purchase
+
+                </button>
+
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         ABOUT
+    ====================================================== -->
+
+    <section
+        class="about"
+        id="about"
+    >
+
+
+        <div class="about-box">
+
+
+            <div class="about-icon">
+                ⛏
+            </div>
+
+
+
+            <div>
+
+
+                <h2>
+                    Support Skylark
+                </h2>
+
+
+
+                <p>
+
+                    Every purchase helps keep Skylark online,
+                    improve the server and create new experiences
+                    for the community.
+
+                </p>
+
+
+            </div>
+
+
+        </div>
+
+
+    </section>
+
+
+
+    <!-- =====================================================
+         FOOTER
+    ====================================================== -->
+
+    <footer>
+
+
+        <div class="footer-logo">
+            SKYLARK
+        </div>
+
+
+
+        <p>
+            © 2026 Skylark Network. All rights reserved.
+        </p>
+
+
+
+        <div class="footer-links">
+
+
+            <a href="#home">
+                Home
+            </a>
+
+
+            <a href="#ranks">
+                Ranks
+            </a>
+
+
+            <a href="#keys">
+                Key Crates
+            </a>
+
+
+            <a href="#about">
+                About
+            </a>
+
+
+            <a
+                href="#"
+                onclick="openDiscord(); return false;"
+            >
+
+                Discord
+
+            </a>
+
+
+        </div>
+
+
+    </footer>
+
+
+
+    <!-- =====================================================
+         PURCHASE MODAL
+    ====================================================== -->
+
+    <div
+        class="modal"
+        id="purchaseModal"
+    >
+
+
+        <div class="modal-box">
+
+
+            <button
+                class="close-modal"
+                onclick="closeModal()"
+            >
+
+                ×
+
+            </button>
+
+
+
+            <div class="modal-icon">
+                🛒
+            </div>
+
+
+
+            <h2>
+                Purchase
+            </h2>
+
+
+
+            <p id="purchaseText">
+
+                You selected a product.
+
+            </p>
+
+
+
+            <div class="modal-buttons">
+
+
+                <button
+                    class="confirm-btn"
+                    onclick="confirmPurchase()"
+                >
+
+                    Continue
+
+                </button>
+
+
+
+                <button
+                    class="cancel-btn"
+                    onclick="closeModal()"
+                >
+
+                    Cancel
+
+                </button>
+
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+
+
+    <!-- =====================================================
+         TOAST
+    ====================================================== -->
+
+    <div
+        class="toast"
+        id="toast"
+    >
+
+        <span id="toastText">
+            Copied!
+        </span>
+
+    </div>
+
+
+
+    <!-- JAVASCRIPT -->
+
+    <script src="script.js"></script>
+
+
+</body>
+</html>
